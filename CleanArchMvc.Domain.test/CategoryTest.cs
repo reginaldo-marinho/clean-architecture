@@ -1,8 +1,5 @@
-using FluentAssertions;
 using CleanArchMvc.Domain;
-
 namespace CleanArchMvc.test;
-
 
 [TestClass]
 public class CategoryTest
@@ -11,6 +8,7 @@ public class CategoryTest
     public void ValidateIdGreaterThanZero()
     {
         Action action = () => new CategoryTest(1,"Bebidas");
+        action.Should().Throw<InvalidOperationException>();
 
     }
 }
