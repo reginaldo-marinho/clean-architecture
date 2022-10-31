@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System;
+namespace CleanArchMvc.Domain;
 public sealed class Category:Entity
 {
     public string Name { get; private set; } = "";
