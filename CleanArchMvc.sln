@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Infra.Ioc", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.WebUi", "CleanArchMvc.WebUi\CleanArchMvc.WebUi.csproj", "{4ADC6BB4-94FA-4032-9291-D02DB987F878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain.test", "CleanArchMvc.Domain.test\CleanArchMvc.Domain.test.csproj", "{FEA91DAC-24BF-45D0-8C07-CBF31FDCB03E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain.Test", "CleanArchMvc.Domain.Test\CleanArchMvc.Domain.Test.csproj", "{C7BAA71D-053F-4325-9593-0B19A8DA8856}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +48,9 @@ Global
 		{FEA91DAC-24BF-45D0-8C07-CBF31FDCB03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA91DAC-24BF-45D0-8C07-CBF31FDCB03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA91DAC-24BF-45D0-8C07-CBF31FDCB03E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BAA71D-053F-4325-9593-0B19A8DA8856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BAA71D-053F-4325-9593-0B19A8DA8856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BAA71D-053F-4325-9593-0B19A8DA8856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BAA71D-053F-4325-9593-0B19A8DA8856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
