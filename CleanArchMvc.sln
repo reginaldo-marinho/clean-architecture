@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Infra.Ioc", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.WebUi", "CleanArchMvc.WebUi\CleanArchMvc.WebUi.csproj", "{4ADC6BB4-94FA-4032-9291-D02DB987F878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.test", "CleanArchMvc.test\CleanArchMvc.test.csproj", "{FEA91DAC-24BF-45D0-8C07-CBF31FDCB03E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain.test", "CleanArchMvc.Domain.test\CleanArchMvc.Domain.test.csproj", "{FEA91DAC-24BF-45D0-8C07-CBF31FDCB03E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
