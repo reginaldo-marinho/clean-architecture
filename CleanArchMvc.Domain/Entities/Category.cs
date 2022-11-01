@@ -12,7 +12,7 @@ public sealed class Category:Entity
         ValidateNameDomain(name);
     }
     public Category(int id, string name){
-        DomainExeptionValidation.When(id < 0 ,"Invalid Id");
+        DomainExeptionValidation.When(id < 1 ,"Invalid Id");
         ValidateNameDomain(name);
     }
     public ICollection<Product> Products {get;set;}
