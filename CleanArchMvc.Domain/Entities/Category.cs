@@ -18,8 +18,8 @@ public sealed class Category:Entity
     public ICollection<Product> Products {get;set;}
 
     private void ValidateNameDomain(string name){
-        DomainExeptionValidation.When(String.IsNullOrEmpty(this.Name),"Invalid Name");
-        DomainExeptionValidation.When(this.Name.Length < 3 ,"Invalid Name to short, minimun 3 caracteres");
+        DomainExeptionValidation.When(String.IsNullOrEmpty(name),"Invalid Name");
+        DomainExeptionValidation.When(name.Length < 3 ,"Invalid Name to short, minimun 3 caracteres");
         this.Name = name;
 
     }

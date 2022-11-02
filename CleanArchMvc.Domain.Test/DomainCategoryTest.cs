@@ -6,12 +6,19 @@ using FluentAssertions;
 namespace CleanArchMvc.Domain.Test;
 
 [TestClass]
-public class UnitTest1
+public class DomainCategoryTest
 {
     [TestMethod]
-    public void TestMethod1()
+    public void CategorySetDomainExeptionValidationInIdZero()
     {
         Action action = () => new Category(0,"Doces");
         action.Should().Throw<DomainExeptionValidation>();
     }
+    [TestMethod]
+    public void CategoryIdWithValue()
+    {
+        Action action = () => new Category(1,"Doces");
+        action.Should().NotThrow<DomainExeptionValidation>();
+    }
+    
 }
