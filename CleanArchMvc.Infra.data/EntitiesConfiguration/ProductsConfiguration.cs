@@ -6,6 +6,12 @@ public class ProductsConfiguration : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {
-
+        builder.HasKey(p => p.Id).HasName("PrimaryKey_ProductId");
+        builder.Property( p => p.Name).IsRequired();
+        builder.Property( p => p.Price).HasPrecision(10,2);
+        builder.HasOne(c => c.Category)
+                .WithMany( p => p.Products)
+                .HasForeignKey(p => p.Id)
+                .HasPrincipalKey(b => b.Id);
     }
 }
