@@ -17,9 +17,9 @@ public class  CategoryRepository : ICategoryRepository
     {
         return await this._categoryContext.Categories.FindAsync(id);   
     }
-    public async Task<IQueryable<Category>> GetCategoriesAsync()
+    public async Task<IEnumerable<Category>> GetCategoriesAsync()
     {
-        return  await this._categoryContext.Categories.ToListAsync();
+       return await this._categoryContext.Categories.ToListAsync();
     }
     public async Task<Category> Remove(Category category)
     {
