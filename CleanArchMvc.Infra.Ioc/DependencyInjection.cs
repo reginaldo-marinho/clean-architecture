@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using CleanArchMvc.Domain;
 public static class DependencyInjection
 {
-    public  static IServiceCollection  AddInfratructure ( this  IServiceCollection services, IConfiguration configuration)
+    public  static IServiceCollection  AddInfratructure (this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<AplicationDbContext>( options => 
         options.UseSqlServer(configuration.GetConnectionString("UdemyServer")

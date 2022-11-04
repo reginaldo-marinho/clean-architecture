@@ -5,8 +5,7 @@
     <ProjectReference Include="..\CleanArchMvc.Application\CleanArchMvc.Application.csproj" />
     <ProjectReference Include="..\CleanArchMvc.Infra.data\CleanArchMvc.Infra.data.csproj" />
   </ItemGroup>
-
-
+  
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
