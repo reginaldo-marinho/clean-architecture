@@ -5,6 +5,7 @@ public sealed class Category:Entity
 {
     public string Name { get; private set; } = "";
 
+ public Category(){}
     public Category(string name){
         ValidateNameDomain(name);
     }

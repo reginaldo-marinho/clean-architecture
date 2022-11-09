@@ -1,6 +1,7 @@
 namespace CleanArchMvc.Domain;
 public sealed class Product : Entity
 {
+    public Product (){}
     public Product (int id, string name, string descrition, decimal price, string img){
         DomainValidation( id, name, descrition, price, img);
     }
