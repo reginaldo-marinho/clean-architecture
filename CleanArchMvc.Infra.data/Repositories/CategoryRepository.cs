@@ -1,10 +1,12 @@
 using CleanArchMvc.Domain;
 using Microsoft.EntityFrameworkCore;
+using CleanArchMvc.Domain.Context;
+namespace CleanArchMvc.Domain.Repositories;
 public class  CategoryRepository : ICategoryRepository
 {
 
-    private AplicationDbContext _categoryContext;    
-    public CategoryRepository(AplicationDbContext context){
+    private ApplicationDbContext _categoryContext;    
+    public CategoryRepository(ApplicationDbContext context){
         this._categoryContext = context;
     }
     public async Task<Category> Create(Category category)

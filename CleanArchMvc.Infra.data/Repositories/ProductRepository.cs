@@ -1,10 +1,13 @@
 using CleanArchMvc.Domain;
 using Microsoft.EntityFrameworkCore;
+using CleanArchMvc.Domain.Context;
+namespace CleanArchMvc.Domain.Repositories;
+
 public class  ProductRepository : IProductRepository
 {
 
-    private AplicationDbContext _productContext;    
-    public ProductRepository(AplicationDbContext context){
+    private ApplicationDbContext _productContext;    
+    public ProductRepository(ApplicationDbContext context){
         this._productContext = context;
     }
     public async Task<Product> Create(Product product)
