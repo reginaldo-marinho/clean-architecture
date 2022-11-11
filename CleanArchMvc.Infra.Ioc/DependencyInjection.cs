@@ -12,8 +12,8 @@ public static class DependencyInjection
     public  static IServiceCollection  AddInfratructureEfStartup (this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<ApplicationDbContext>( options => 
-        options.UseNpgsql(configuration.GetConnectionString("UdemyServer")
-        , b => b.MigrationsAssembly(typeof(CleanArchMvc.Domain.Context.ApplicationDbContext).Assembly.FullName)));
+            options.UseNpgsql(configuration.GetConnectionString("UdemyServer")
+            , b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
          
          services.AddScoped<ICategoryRepository,CategoryRepository>();
          services.AddScoped<IProductRepository,ProductRepository>();

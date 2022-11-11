@@ -9,7 +9,7 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
         builder
             .HasKey(p => p.Id)
-            .HasName("PrimaryKey_ProductId");
+            .HasName("PrimaryKey_CategoryId");
         builder
             .Property( p => p.Name)
             .HasMaxLength(100)
