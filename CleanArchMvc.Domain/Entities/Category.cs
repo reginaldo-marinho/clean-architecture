@@ -4,8 +4,9 @@ namespace CleanArchMvc.Domain;
 public sealed class Category:Entity
 {
     public string Name { get; private set; } = "";
-
- public Category(){}
+    public ICollection<Product> Products {get;set;}
+    
+    public Category(){}
     public Category(string name){
         ValidateNameDomain(name);
     }
@@ -16,7 +17,6 @@ public sealed class Category:Entity
         DomainExeptionValidation.When(id < 1 ,"Invalid Id");
         ValidateNameDomain(name);
     }
-    public ICollection<Product> Products {get;set;}
 
     private void ValidateNameDomain(string name){
         DomainExeptionValidation.When(String.IsNullOrEmpty(name),"Invalid Name");

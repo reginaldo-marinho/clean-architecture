@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CategoryDTO>
+
+<h2>Categories</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td><button type="button" class="btn btn-secondary">Alter</button></td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+        </tr>
+    }
+  </tbody>
+</table>
+
+
+

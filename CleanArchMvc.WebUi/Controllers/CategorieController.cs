@@ -4,18 +4,19 @@ using CleanArchMvc.WebUi.Models;
 
 namespace CleanArchMvc.WebUi.Controllers;
 
-public class HomeController : Controller
+public class CategorieController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private readonly ICategoryServices _categoryServices;
+    public CategorieController(ICategoryServices categoryServices)
     {
-        _logger = logger;
+        _categoryServices = categoryServices;
     }
 
-    public IActionResult Index()
+    [HttpGet]
+    public async  Task<IActionResult> Index()
     {
-        return View();
+        var categories  = await _categoryServices.GetCategoriesAsync();
+        return View(categories);
     }
 
     public IActionResult Privacy()

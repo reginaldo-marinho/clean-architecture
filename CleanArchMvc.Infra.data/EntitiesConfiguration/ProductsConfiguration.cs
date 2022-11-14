@@ -11,6 +11,10 @@ public class ProductsConfiguration : IEntityTypeConfiguration<Product>
         builder.Property( p => p.Name).HasMaxLength(100).IsRequired();
         builder.Property( p => p.Descrition).HasMaxLength(200).IsRequired();
         builder.Property( p => p.Price).HasPrecision(10,2);
-        builder.HasOne(c => c.Category).WithMany( p => p.Products).HasForeignKey(p => p.Id).HasPrincipalKey(b => b.Id);
+        builder
+            .HasOne(c => c.Category)
+            .WithMany( p => p.Products)
+            .HasForeignKey(p => p.CategoryId)
+            .HasPrincipalKey(c => c.Id);
     }
 }
