@@ -75,6 +75,53 @@ namespace CleanArchMvc.Infra.data.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            Descrition = "Refrigerante Coca Cola 200ml",
+                            Image = "",
+                            Name = "Coca Cola",
+                            Price = 4.77m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            Descrition = "Refrigerante Pepsi 200ml",
+                            Image = "",
+                            Name = "Pepsi",
+                            Price = 3.8m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            Descrition = "Refrigerante Fanta Laranja 200ml",
+                            Image = "",
+                            Name = "Fanta Laranja",
+                            Price = 4.77m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 2,
+                            Descrition = "Coxinha 50g",
+                            Image = "",
+                            Name = "Coxinha",
+                            Price = 5m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 2,
+                            Descrition = "Kibe 100g",
+                            Image = "",
+                            Name = "Kibe",
+                            Price = 4.40m
+                        });
                 });
 
             modelBuilder.Entity("CleanArchMvc.Domain.Product", b =>

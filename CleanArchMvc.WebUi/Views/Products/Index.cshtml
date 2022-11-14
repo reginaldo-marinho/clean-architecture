@@ -1,12 +1,14 @@
-﻿@model IEnumerable<CategoryDTO>
+﻿@model IEnumerable<ProductDTO>
 
-<h2>Categories</h2>
+<h2>Products</h2>
 <button type="button" class="btn btn-primary">Register New</button>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Name</th>
+      <th scope="col">Descrition</th>
+      <th scope="col">Price</th>
     </tr>
   </thead>
   <tbody>
@@ -15,6 +17,8 @@
         <tr>
             <td>@item.Id</td>
             <td>@item.Name</td>
+            <td>@item.Descrition</td>
+            <td>@item.Price</td>
             <td>
               <button type="button" class="btn btn-warning">Edit</button>
               <button type="button" class="btn btn-success">Detail</button>

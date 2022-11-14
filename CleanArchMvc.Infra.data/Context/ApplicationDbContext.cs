@@ -13,4 +13,4 @@ public class ApplicationDbContext : DbContext
         builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
 
     }
-}
+} 
